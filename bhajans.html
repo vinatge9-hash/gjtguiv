@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Bhajans Gallery | Krishna Bhakti Portal</title>
+  <meta name='description' content='A collection of soulful Bhajans dedicated to Lord Krishna.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='bg-white text-gray-900'>
+  <header>
+    <nav class='bg-blue-800 text-white'>
+      <div class='max-w-7xl mx-auto px-4 py-4 flex items-center justify-between'>
+        <a href='index.html' class='flex items-center space-x-2'>
+          <span class='text-xl font-[primary-font]'>Krishna Bhakti Portal</span>
+        </a>
+        <div class='hidden md:flex space-x-6'>
+          <a href='index.html' class='hover:text-yellow-300'>Home</a>
+          <a href='about.html' class='hover:text-yellow-300'>About Krishna</a>
+          <a href='daily-aarti.html' class='hover:text-yellow-300'>Aarti</a>
+          <a href='prayers.html' class='hover:text-yellow-300'>Prayers</a>
+          <a href='bhajans.html' class='hover:text-yellow-300'>Bhajans</a>
+          <a href='stories.html' class='hover:text-yellow-300'>Stories</a>
+          <a href='contact.html' class='hover:text-yellow-300'>Contact</a>
+        </div>
+        <div class='md:hidden'>
+          <button id='mobile-menu-button' class='text-white'>Menu</button>
+        </div>
+      </div>
+      <div id='mobile-menu' class='md:hidden hidden px-4 pb-4'>
+        <a href='index.html' class='block py-2'>Home</a>
+        <a href='about.html' class='block py-2'>About Krishna</a>
+        <a href='daily-aarti.html' class='block py-2'>Aarti</a>
+        <a href='prayers.html' class='block py-2'>Prayers</a>
+        <a href='bhajans.html' class='block py-2'>Bhajans</a>
+        <a href='stories.html' class='block py-2'>Stories</a>
+        <a href='contact.html' class='block py-2'>Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class='py-12'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <h1 class='font-[primary-font] text-3xl md:text-4xl text-blue-800 mb-6'>Bhajans Gallery</h1>
+        <p class='mb-6'>A curated collection of melodious bhajans dedicated to Krishna. Enjoy soulful tunes and a peaceful ambiance.</p>
+        <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+          <div class='bg-white p-4 rounded-lg shadow'>
+            <img src='https://images.unsplash.com/photo-1652021050254-66392f4dc418?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxMHx8S3Jpc2huYSUyMGJoYWphbiUyMGNvdmVyJTIwMXxlbnwwfDB8fHwxNzU5MzQwOTg5fDA&ixlib=rb-4.1.0&q=80&w=1080' alt='Bhajan cover 1' class='w-full h-40 object-cover rounded'>
+            <div class='mt-2'>
+              <h3 class='font-[secondary-font] text-lg text-blue-800'>ओम् भक्त हरे</h3>
+              <p class='text-sm text-gray-700'>Listen to this tranquil bhajan celebrating devotion.</p>
+              <a href='#' class='text-blue-600 hover:underline text-sm'>Listen</a>
+            </div>
+          </div>
+          <div class='bg-white p-4 rounded-lg shadow'>
+            <img src='https://pixabay.com/get/g3034537e558a4daebf4f1aead2de17a09f28c9afe6975d442a8a9d60c5a9218150fb05c26e3ed1e80d7574f10657b4183eb73cdced4043e3159d2f9b55f8147f_640.jpg' alt='Bhajan cover 2' class='w-full h-40 object-cover rounded'>
+            <div class='mt-2'>
+              <h3 class='font-[secondary-font] text-lg text-blue-800'>Govinda Hare Murare</h3>
+              <p class='text-sm text-gray-700'>A devotional classic sung by harmonium and flute.</p>
+              <a href='#' class='text-blue-600 hover:underline text-sm'>Listen</a>
+            </div>
+          </div>
+          <div class='bg-white p-4 rounded-lg shadow'>
+            <img src='https://images.unsplash.com/photo-1695452487158-bad49373994b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHxLcmlzaG5hJTIwYmhhamFuJTIwY292ZXIlMjAzfGVufDB8MHx8fDE3NTkzNDA5OTF8MA&ixlib=rb-4.1.0&q=80&w=1080' alt='Bhajan cover 3' class='w-full h-40 object-cover rounded'>
+            <div class='mt-2'>
+              <h3 class='font-[secondary-font] text-lg text-blue-800'>Shri Krishna Govind Govind</h3>
+              <p class='text-sm text-gray-700'>A peppy bhajan for joyful kirtan sessions.</p>
+              <a href='#' class='text-blue-600 hover:underline text-sm'>Listen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class='bg-blue-900 text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-6'>
+      <div class='flex justify-between items-center'>
+        <div class='text-sm'>© 2025 Krishna Bhakti Portal</div>
+        <nav class='space-x-4'>
+          <a href='index.html' class='hover:text-yellow-300'>Home</a>
+          <a href='prayers.html' class='hover:text-yellow-300'>Prayers</a>
+          <a href='contact.html' class='hover:text-yellow-300'>Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
