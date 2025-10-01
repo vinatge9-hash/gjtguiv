@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Daily Aarti & Timings | Krishna Bhakti Portal</title>
+  <meta name='description' content='Daily Aarti timings, rituals, and guidelines for Krishna devotion.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='bg-white text-gray-900'>
+  <header>
+    <nav class='bg-blue-800 text-white'>
+      <div class='max-w-7xl mx-auto px-4 py-4 flex items-center justify-between'>
+        <a href='index.html' class='flex items-center space-x-2'>
+          <span class='text-xl font-[primary-font]'>Krishna Bhakti Portal</span>
+        </a>
+        <div class='hidden md:flex space-x-6'>
+          <a href='index.html' class='hover:text-yellow-300'>Home</a>
+          <a href='about.html' class='hover:text-yellow-300'>About Krishna</a>
+          <a href='daily-aarti.html' class='hover:text-yellow-300'>Aarti</a>
+          <a href='prayers.html' class='hover:text-yellow-300'>Prayers</a>
+          <a href='bhajans.html' class='hover:text-yellow-300'>Bhajans</a>
+          <a href='stories.html' class='hover:text-yellow-300'>Stories</a>
+          <a href='contact.html' class='hover:text-yellow-300'>Contact</a>
+        </div>
+        <div class='md:hidden'>
+          <button id='mobile-menu-button' class='text-white'>Menu</button>
+        </div>
+      </div>
+      <div id='mobile-menu' class='md:hidden hidden px-4 pb-4'>
+        <a href='index.html' class='block py-2'>Home</a>
+        <a href='about.html' class='block py-2'>About Krishna</a>
+        <a href='daily-aarti.html' class='block py-2'>Aarti</a>
+        <a href='prayers.html' class='block py-2'>Prayers</a>
+        <a href='bhajans.html' class='block py-2'>Bhajans</a>
+        <a href='stories.html' class='block py-2'>Stories</a>
+        <a href='contact.html' class='block py-2'>Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class='relative min-h-screen bg-cover bg-center' style='background-image: url(https://pixabay.com/get/g4198d3718014be312f0c52831f4a09bf90c900b7bd9a8ae75810fb425ab5fb06cf4fc9de26305befc635a817ab24a82ad6bc35a43fd2dbc460d94c81aa014a3f_640.jpg);'>
+      <div class='absolute inset-0 bg-black bg-opacity-40'></div>
+      <div class='relative z-10 max-w-3xl mx-auto px-4 py-28 text-white text-center'>
+        <h1 class='font-[primary-font] text-4xl md:text-5xl font-bold mb-4'>Daily Aarti & Timings</h1>
+        <p class='mb-6'>Aarti times guide for daily worship at your home or temple. Light a lamp and chant with devotion.</p>
+        <div class='grid grid-cols-1 md:grid-cols-2 gap-4 items-start'>
+          <div class='bg-white text-gray-900 p-4 rounded-lg shadow'>
+            <h3 class='font-[secondary-font] text-xl text-blue-800 mb-2'>Shri Krishna Aarti</h3>
+            <p>6:00 AM – 6:30 AM</p>
+          </div>
+          <div class='bg-white text-gray-900 p-4 rounded-lg shadow'>
+            <h3 class='font-[secondary-font] text-xl text-blue-800 mb-2'>Evening Aarti</h3>
+            <p>7:30 PM – 8:15 PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class='bg-blue-900 text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-6'>
+      <div class='flex justify-between items-center'>
+        <div class='text-sm'>© 2025 Krishna Bhakti Portal</div>
+        <nav class='space-x-4'>
+          <a href='index.html' class='hover:text-yellow-300'>Home</a>
+          <a href='daily-aarti.html' class='hover:text-yellow-300'>Aarti</a>
+          <a href='contact.html' class='hover:text-yellow-300'>Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
