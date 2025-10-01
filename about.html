@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>About Krishna | Krishna Bhakti Portal</title>
+  <meta name='description' content='Learn about Lord Krishna, his life, teachings, and the significance of devotion in everyday life.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='bg-white text-gray-900'>
+  <header>
+    <nav class='bg-blue-800 text-white'>
+      <div class='max-w-7xl mx-auto px-4 py-4 flex items-center justify-between'>
+        <a href='index.html' class='flex items-center space-x-2'>
+          <span class='text-xl font-[primary-font]'>Krishna Bhakti Portal</span>
+        </a>
+        <div class='hidden md:flex space-x-6'>
+          <a href='index.html' class='hover:text-yellow-300'>Home</a>
+          <a href='about.html' class='hover:text-yellow-300'>About Krishna</a>
+          <a href='daily-aarti.html' class='hover:text-yellow-300'>Aarti</a>
+          <a href='prayers.html' class='hover:text-yellow-300'>Prayers</a>
+          <a href='bhajans.html' class='hover:text-yellow-300'>Bhajans</a>
+          <a href='stories.html' class='hover:text-yellow-300'>Stories</a>
+          <a href='contact.html' class='hover:text-yellow-300'>Contact</a>
+        </div>
+        <div class='md:hidden'>
+          <button id='mobile-menu-button' class='text-white'>Menu</button>
+        </div>
+      </div>
+      <div id='mobile-menu' class='md:hidden hidden px-4 pb-4'>
+        <a href='index.html' class='block py-2'>Home</a>
+        <a href='about.html' class='block py-2'>About Krishna</a>
+        <a href='daily-aarti.html' class='block py-2'>Aarti</a>
+        <a href='prayers.html' class='block py-2'>Prayers</a>
+        <a href='bhajans.html' class='block py-2'>Bhajans</a>
+        <a href='stories.html' class='block py-2'>Stories</a>
+        <a href='contact.html' class='block py-2'>Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class='relative min-h-screen bg-cover bg-center' style='background-image: url(https://images.unsplash.com/photo-1623842676645-da7ac11b5077?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBLcmlzaG5hJTIwcGFpbnRpbmclMjB3aXRoJTIwcGVhY29jayUyMGZlYXRoZXJ8ZW58MHwwfHx8MTc1OTM0MDk4OHww&ixlib=rb-4.1.0&q=80&w=1080);'>
+      <div class='absolute inset-0 bg-black bg-opacity-40'></div>
+      <div class='relative z-10 max-w-4xl mx-auto px-4 py-28 text-white text-center'>
+        <h1 class='font-[primary-font] text-4xl md:text-5xl font-bold mb-4'>About Krishna</h1>
+        <p class='font-[secondary-font] text-lg md:text-xl mb-6'>Krishna is revered as the Supreme Personality of Godhead, the embodiment of compassion, wisdom, and divine play. His stories illuminate dharma, devotion, and the path of love toward the divine.</p>
+      </div>
+    </section>
+
+    <section class='py-12 bg-white'>
+      <div class='max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8'>
+        <article class='bg-white p-6 rounded-lg shadow'>
+          <h2 class='font-[primary-font] text-2xl text-blue-800 mb-2'>Life of Krishna</h2>
+          <p class='text-gray-700'>Born in Mathura, Krishna grew up in Vrindavan and Dvārakā. His childhood leelas (divine plays) teach courage, humility, and the joy of divine love. His flute calls the soul to remember the eternal divine.</p>
+        </article>
+        <article class='bg-white p-6 rounded-lg shadow'>
+          <h2 class='font-[primary-font] text-2xl text-blue-800 mb-2'>Teachings & Devotion</h2>
+          <p class='text-gray-700'>Krishna’s teachings emphasize bhakti (devotion) over ritualism, the importance of dharma (righteousness), and the unity of the self with the divine. The Bhagavad Gita remains a guiding compass for seekers.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-blue-900 text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-8'>
+      <div class='flex flex-wrap justify-between items-center'>
+        <div class='mb-4'>
+          <strong>Krishna Bhakti Portal</strong>
+          <p class='text-sm'>A devotional space for worship, prayers, and stories of Krishna.</p>
+        </div>
+        <nav class='space-x-4'>
+          <a href='index.html' class='hover:text-yellow-300'>Home</a>
+          <a href='about.html' class='hover:text-yellow-300'>About Krishna</a>
+          <a href='daily-aarti.html' class='hover:text-yellow-300'>Aarti</a>
+          <a href='prayers.html' class='hover:text-yellow-300'>Prayers</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    }
+  </script>
+</body>
+</html>
