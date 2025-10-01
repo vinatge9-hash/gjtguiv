@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Prayers & Mantras | Krishna Bhakti Portal</title>
+  <meta name='description' content='A curated collection of prayers and mantras dedicated to Lord Krishna.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body class='bg-white text-gray-900'>
+  <header>
+    <nav class='bg-blue-800 text-white'>
+      <div class='max-w-7xl mx-auto px-4 py-4 flex items-center justify-between'>
+        <a href='index.html' class='flex items-center space-x-2'>
+          <span class='text-xl font-[primary-font]'>Krishna Bhakti Portal</span>
+        </a>
+        <div class='hidden md:flex space-x-6'>
+          <a href='index.html' class='hover:text-yellow-300'>Home</a>
+          <a href='about.html' class='hover:text-yellow-300'>About Krishna</a>
+          <a href='daily-aarti.html' class='hover:text-yellow-300'>Aarti</a>
+          <a href='prayers.html' class='hover:text-yellow-300'>Prayers</a>
+          <a href='bhajans.html' class='hover:text-yellow-300'>Bhajans</a>
+          <a href='stories.html' class='hover:text-yellow-300'>Stories</a>
+          <a href='contact.html' class='hover:text-yellow-300'>Contact</a>
+        </div>
+        <div class='md:hidden'>
+          <button id='mobile-menu-button' class='text-white'>Menu</button>
+        </div>
+      </div>
+      <div id='mobile-menu' class='md:hidden hidden px-4 pb-4'>
+        <a href='index.html' class='block py-2'>Home</a>
+        <a href='about.html' class='block py-2'>About Krishna</a>
+        <a href='daily-aarti.html' class='block py-2'>Aarti</a>
+        <a href='prayers.html' class='block py-2'>Prayers</a>
+        <a href='bhajans.html' class='block py-2'>Bhajans</a>
+        <a href='stories.html' class='block py-2'>Stories</a>
+        <a href='contact.html' class='block py-2'>Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class='relative min-h-screen bg-cover bg-center' style='background-image: url(https://pixabay.com/get/g2d2e7ba870cc53185b0773fc789e21997e75f6001c5c02feed6f6e096904e2fd7dbc23bb75861a5ed8cfd5aaf5e90155_640.jpg);'>
+      <div class='absolute inset-0 bg-black bg-opacity-40'></div>
+      <div class='relative z-10 max-w-4xl mx-auto px-4 py-28 text-white text-center'>
+        <h1 class='font-[primary-font] text-4xl md:text-5xl font-bold mb-4'>Prayers & Mantras</h1>
+        <p class='mb-6'>Aloft in devotion—chant, meditate, and connect with Krishna through sacred invocations.</p>
+        <div class='grid grid-cols-1 md:grid-cols-2 gap-6'>
+          <article class='bg-white text-gray-900 p-4 rounded-lg'>
+            <h3 class='font-[secondary-font] text-xl text-blue-800 mb-2'>Hare Krishna Maha Mantra</h3>
+            <p>Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare / Hare Rama, Hare Rama, Rama Rama, Hare Hare</p>
+          </article>
+          <article class='bg-white text-gray-900 p-4 rounded-lg'>
+            <h3 class='font-[secondary-font] text-xl text-blue-800 mb-2'>Om Namo Bhagavate Vasudevaya</h3>
+            <p>A condensed prayer to the Supreme Person who appears in Krishna as Vasudeva.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class='bg-blue-900 text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-6'>
+      <div class='flex justify-between items-center'>
+        <div class='text-sm'>© 2025 Krishna Bhakti Portal</div>
+        <nav class='space-x-4'>
+          <a href='index.html' class='hover:text-yellow-300'>Home</a>
+          <a href='prayers.html' class='hover:text-yellow-300'>Prayers</a>
+          <a href='contact.html' class='hover:text-yellow-300'>Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
